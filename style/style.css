@@ -1,0 +1,144 @@
+body{
+    background-color: rgb(248, 248, 248);
+}
+
+h2{
+    font-weight: bold;
+}
+.container{
+    display: grid;
+    grid-template-areas: 'myArealeft myArearight';
+   
+    width: 95vw;
+    background-color: rgb(248, 247, 247);
+
+    box-shadow: 3px 0 5px 5px rgb(244, 238, 238);
+    
+}
+
+.leftside{
+    
+    /* border: 3px solid red; */
+    grid-area: myArealeft;
+    background: linear-gradient(rgb(241, 142, 71),rgb(59, 48, 87),rgb(241, 142, 71),rgb(219, 214, 147));
+    height: 90vh;
+
+    
+    
+   
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-left: 10px;
+    
+    color: wheat;
+    font-size: 1.3rem;
+}
+
+.rightside{
+    
+    /* border: 3px solid rgb(39, 2, 2); */
+    grid-area: myArearight;
+
+    height: 90vh;
+    margin-left: 10px;
+    
+    
+    display: flex;
+    flex-direction: column;
+    
+    box-shadow: 2px 4px 5px 5px inherit;
+
+}
+.form{
+   
+    margin: 30px 0;
+   
+}
+.input-box{
+    padding: 12px;
+    width: 100%;
+    
+}
+
+
+#username{
+    margin-top: 4px;
+   
+
+    
+}
+
+.username-div{
+    margin: 20px 0;
+}
+.password-div{
+    margin-top: 20px;
+    
+}
+
+#password{
+    margin-top: 4px;
+   
+}
+
+#checkbox{
+
+}
+.checkbox-div{
+    margin: 25px 0;
+
+    display: flex;
+   justify-content: space-between;
+
+}
+.checkbox-div label{
+
+color: aquamarine;
+}
+
+#login-button{
+   margin-top: 20px;
+   color: white;
+   background-color: rgba(187, 25, 202,0.8);
+   border-radius: 4px;
+   text-shadow: 1px 2px 3px 2px rgb(128, 27, 27);
+   
+}
+
+
+.sign{
+    margin: 30px 0;
+    
+}
+
+@media(max-width:770px){
+    .leftside{
+        display: none;
+    }
+
+    .rightside{
+        min-height: 100vh;
+    }
+
+    .input-box{
+        width: 70%;
+    }
+
+    .checkbox-div{
+
+        display: flex;
+        justify-content: flex-start;
+        
+
+
+    }
+
+    .checkbox-div label{
+       margin-left: 5px;
+
+}
+
